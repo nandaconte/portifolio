@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Gideon+Roman&family=Montserrat:wght@200;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --font: 'Montserrat', sans-serif;
+    --highligth-font: 'Gideon Roman', serif;
+    --main-color: #2C3639;
+    --secundary-color: #3F4E4F;
+    --third-color: #A27B5C;
+    --bright-color: #DCD7C9;
+    --bg-nav: rgb(241, 239, 234);
+    --loader-font: 'Delicious Handrawn', cursive;
+}
+
+/* Menu de Navegação */
+#menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bg-nav);
+    min-height: 120px;
+    min-width: 100vw;
+    position: fixed;
+    z-index: 3;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(59, 68, 78, 0.589);
+}
+
+#menu a {
+    color: var(--main-color);
+}
+
+#menu span {
+    color: var(--third-color);
+    font-weight: bold;
+}
+
+#nav-bar {
+    position: absolute;
+    top: -500px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(59, 68, 78, 0.589);
+}
+
+#nav-bar li {
+    margin-bottom: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+#nav-bar.active {
+    top: 100%;
+    background-color: rgb(241, 239, 234);
+    text-align: center;
+}
+
+
+/* Fim do Menu de Navegação */
+
+/*  Configuração do container principal*/
+#main-container {
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #f5f5f5;
+}
+
+/* About */
+
+#about {
+    margin-top: 150px;
+    padding: 1rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    font-size: 2rem;
+}
+
+.social a {
+    color: var(--secundary-color)
+}
+
+#content-about {
+    margin-top: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#content-about span {
+    color: var(--third-color);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#content-about :nth-child(1) {
+    font-size: 15px;
+}
+
+#content-about :nth-child(2) {
+    font-size: 12px;
+}
+.audio{
+    margin-top: 20px;
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+#image-about {
+    text-align: center;
+}
+
+#image-about img {
+    height: 300px;
+    border-radius: 50%;
+    border: 6px solid var(--third-color);
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(59, 68, 78, 0.589);
+}
+
+/* Fim do About */
+
+/* Skills */
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 2rem;
+}
+
+#skills span {
+    font-size: 12px;
+}
+
+.skills-container {
+    width: 50%;
+    height: 100%;
+}
+
+.bars-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.bars-box h3,
+span {
+    font-size: 1.1rem;
+
+}
+
+.light-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background: var(--third-color);
+    border-radius: 0.5rem;
+
+}
+
+.percent-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5rem;
+    background: var(--main-color);
+    border-radius: 0.5rem;
+
+}
+
+.html-bar {
+    width: 94%;
+
+}
+
+.css-bar {
+    width: 84%;
+
+}
+
+.js-bar {
+    width: 74%;
+
+}
+
+.react-bar {
+    width: 80%;
+
+}
+
+.node-bar {
+    width: 65%;
+
+}
+
+.git-bar {
+    width: 90%;
+}
+
+/* Fim da Skills */
+
+/* Work */
+#work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#work span {
+    font-size: 12px;
+}
+
+#container-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+#container-work img {
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(59, 68, 78, 0.589);
+    margin-bottom: 1rem;
+}
+
+#container-work subtitle {
+    display: flex;
+    justify-content: center;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+/* Fim Work */
+
+/* Contato */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.contact-form {
+    display: grid;
+    align-items: center;
+    place-items: center;
+
+
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-top: 2rem;
+
+}
+
+form input,
+textarea {
+    padding: 15px;
+    border-radius: 0.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: hsla(217, 8%, 20%, 0.1);
+    margin-bottom: 1rem;
+
+}
+
+form input::placeholder,
+textarea::placeholder {
+    color: var(--main-color);
+}
+
+form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact-button {
+    width: 160px;
+    cursor: pointer;
+    background: var(--secundary-color);
+    color: #fff;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 30%;
+}
+
+.contact-button:hover {
+    background-color: var(--third-color);
+}
+
+/* Fim Contato */
+
+
+/* DARK MODE */
+body.active{
+    color: VAR(--bright-color);
+    background:var(--main-color);
+}
+/* Menu de navegação - darkmode*/
+.bx-sun{
+    color:var(--bg-nav)
+}
+body.active #menu{
+    background-color: var(--secundary-color);
+    
+}
+body.active #menu a{
+    color:var(--bright-color);
+}
+body.active #nav-bar{
+    background-color: var(--secundary-color);
+}
+body.active .btn:before{
+    background: var(--third-color);
+}
+/* Fim do Menu de Navegação - darkmode*/
+
+/* configuração container principa - darkmode */
+body.active #main-container{
+    background-color: var(--secundary-color);
+}
+/* Fim configuração container principa - darkmode */
+
+/* About - darkmode */
+body.active .social a{
+    color:var(--third-color);
+
+}
+body.active #about span{
+    color: var(--third-color);
+}
+
+body.active audio::-webkit-media-controls-panel{
+    background-color: var(--third-color);
+}
+/* FIM About - darkmode */
+
+/* Skills - darkmode */
+body.active .light-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background: var(--bright-color);
+    border-radius: 0.5rem;
+}
+body.active .percent-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5rem;
+    background: var(--third-color);
+    border-radius: 0.5rem;
+}
+/* FIM Skills - darkmode */
+
+/* Work - darkmode */
+body.active #container-work subtitle{
+    color:var(--bright-color)
+}
+
+/* FIM Work - darkmode */
+
+/* Contato - darkmode */
+
+ body.active #contact form input {
+    background: var(--third-color);
+ }
+ body.active #textarea{
+    background: var(--third-color);
+ }
+ body.active #contact .contact-button:hover{
+    background: var(--bg-nav);
+    color: var(--main-color);
+ }
+ /* FIM Contato - darkmode */
+
+
+/* FIM DARK MODE */
+
+@media (min-width:1100px) {
+
+    /* Menu de navegação */
+    #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: var(--bg-nav);
+        min-height: 100vh;
+        min-width: 120px;
+        position: fixed;
+        z-index: 3;
+        box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(59, 68, 78, 0.589);
+        padding: 1rem;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    #nav-bar {
+        position: relative;
+        top: 50px;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .btn {
+        width: 200px;
+        height: 60px;
+        background: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 16px;
+        position: relative;
+        z-index: 1;
+
+    }
+
+    .btn::before {
+        content: "";
+        /* para mover o conteudo */
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        background: #353b48;
+        transform: skewX(50deg);
+        transition: .4s linear;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .btn::before {
+        top: -3px;
+        left: 10%;
+
+    }
+
+    .btn:hover::before {
+        left: 80%;
+
+    }
+
+    /* Fim do Menu de Navegação */
+   body{
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    ::-webkit-scrollbar{
+        height: 6px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: var(--third-color);
+    }
+    ::-webkit-scrollbar-track{
+        background-color: var(--secundary-color);
+    }
+    /*Configuração do Main Container  */
+    #main-container {
+        flex-direction: row;
+        width: 500vh;
+        min-height: 100vh;
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden; 
+
+    }
+    /* Fim Configuração do Main Container */
+
+    /* About */
+    .social{
+        display: flex;
+        flex-direction: column;
+        margin:2rem;
+    }
+    #about{
+        margin-left: 250px;
+        margin-top: 2rem;
+        min-height: 100vh;
+        width: 150vw;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #content-about{
+        margin:2rem;
+    }
+    /*  Fim About */
+
+    /* Skilss */
+    #skills{
+        min-height: 100vh;
+        width: 150vw;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    #skills span{
+        margin-bottom: 1rem;
+    }
+
+    /* Fim Skills */
+    /* Work */
+    #work{
+        min-height: 100vh;
+        width: 150vw;
+        text-align: center;
+    }
+    #container-work{
+        width: 100%;
+        
+    }
+    #container-work subtitle{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+    /* Fim Work */
+    #contact{
+        margin-top: 2rem;
+        min-height: 100vh;
+        width: 150vw;
+    }
+}
+
+@media (min-width:1440px) {
+    /* About */
+    #about #content-about span{
+        font-size:30px ;
+       }
+    #about #content-about p{
+    font-size:26px ;
+   }
+   #image-about img{
+        height: 500px;
+   }
+   /* Fim do About */
+
+   /* Skills */
+   #skills{
+    padding: 12rem;
+   }
+   .skills-container{
+    width: 90%;
+    height: 100%
+   }
+   #skills span{
+    font-size: 20px;
+   }
+   /* Fim Skills */
+
+   /* Work */
+   #work{
+    padding-top: 12rem;
+   }
+   #work h2{
+    font-size: 36px;
+   }
+   #work span{
+    font-size: 20px;
+   }
+   #container-work{
+    text-align: center;
+   }
+   #work subtitle{
+    display: flex;
+    justify-content: center;
+   }
+   /* Fim Work */
+
+   /* Contato */
+    #contact{
+        padding-top: 12rem;
+    }
+    .contact-form form{
+        width: 800px;
+    }
+    /* Fim contato */
+}

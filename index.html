@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Nanda Conte</title>
+</head>
+
+<body>
+    <header>
+        <navbar id="menu">
+            <div class="bx bx-moon" id="darkmode"></div>
+            <a href="#home">My Portifolio<br><span>Nanda Conte</span></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <ul id="nav-bar">
+                <li>
+                    <a href="#about" class="btn">Sobre</a>
+                </li>
+                <li>
+                    <a href="#skills" class="btn">Habilidades</a>
+                </li>
+                <li>
+                    <a href="#work" class="btn">Trabalhos</a>
+                </li>
+                <li>
+                    <a href="#contact" class="btn">Contato</a>
+                </li>
+            </ul>
+        </navbar>
+    </header>
+    <main>
+        <div id="wapper">
+        <div id="main-container">
+            <section id="about">
+                <div class="social">
+                    <a href="#">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                </div>
+                <div id="content-about">
+                    <p><span>Olá, sou a Nanda Conte</span><br><br>
+                        Desenvolvedora FullStack, com foco em front-end.</p>
+                        <br>
+                        <p class="audio">Dê um play e aproveite a viagem</p>
+                        <audio src="./audio/tomp3.cc - Phora  To The Moon Official Music Video.mp3.crdownload" type="audio/mpeg" id="my-audio" controls></audio>
+                </div>
+                <div id="image-about">
+                    <img src="./img/me.jpeg" alt="Nanda Conte">
+                </div>
+            </section>
+            <section id="skills">
+                <h2>Minhas habilidades</h2>
+                <span>Sempre aprimorando minhas habilidades</span>
+                <div class="skills-container">
+                    <div class="bars">
+                        <div class="bars-box">
+                            <h3>HTML</h3>
+                            <span>94%</span>
+                            <div class="light-bar"></div>
+                            <div class="percent-bar html-bar"></div>
+                        </div>
+                        <div class="bars-box">
+                            <h3>CSS</h3>
+                            <span>84%</span>
+                            <div class="light-bar"></div>
+                            <div class="percent-bar css-bar"></div>
+                        </div>
+                        <div class="bars-box">
+                            <h3>JavaScript</h3>
+                            <span>74%</span>
+                            <div class="light-bar"></div>
+                            <div class="percent-bar js-bar"></div>
+                        </div>
+                        <div class="bars-box">
+                            <h3>React</h3>
+                            <span>80%</span>
+                            <div class="light-bar"></div>
+                            <div class="percent-bar react-bar"></div>
+                        </div>
+                        <div class="bars-box">
+                            <h3>Node</h3>
+                            <span>65%</span>
+                            <div class="light-bar"></div>
+                            <div class="percent-bar node-bar"></div>
+                        </div>
+                        <div class="bars-box">
+                            <h3>Github</h3>
+                            <span>90%</span>
+                            <div class="light-bar"></div>
+                            <div class="percent-bar git-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <section id="work">
+                <h2> Meus trabalhos</h2>
+                <span>Clique e conheça</span>
+                <div id="container-work">
+                    <div class="projects">
+                        <a href="#">
+                            <img src="./img/castelo-assombrado.gif" alt="projeto">
+                            <subtitle>Projeto x</subtitle>
+                        </a>
+                    </div>
+                    <div class="projects">
+                        <a href="#">
+                            <img src="./img/castelo-assombrado.gif" alt="projeto">
+                            <subtitle>Projeto y</subtitle>
+                        </a>
+                    </div>
+                    <div class="projects">
+                        <a href="#">
+                            <img src="./img/castelo-assombrado.gif" alt="projeto">
+                            <subtitle>Projeto z</subtitle>
+                        </a>
+                    </div>
+                    <div class="projects">
+                        <a href="#">
+                            <img src="./img/castelo-assombrado.gif" alt="projeto">
+                            <subtitle>Projeto h</subtitle>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <div class="heading">
+                    <h2>Fale Comigo</h2>
+                    <span> Que tal mandar uma mensagem?</span>
+                </div>
+                <div class="contact-form">
+                    <form action="">
+                        <input type="text" id="nome" placeholder="Nome">
+                        <input type="email" id="email" placeholder="Email">
+                        <textarea  id="textarea" cols="30" rows="1" placeholder="Escreva sua mensagem aqui..."></textarea>
+                           
+                        <input type="button" value="Enviar" class="contact-button">
+                    </form>
+                </div>    
+            </section>
+        </div>
+    </div>
+    </main>
+</body>
+
+</html>

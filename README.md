@@ -1,7 +1,12 @@
 
 Olá, Bem vindo ao meu projeto de portfólio.
 
-![Imagem](https://github.com/nandaconte/portifolio/blob/305803c4afafb1e27aadeb547c6b3c5a91114b14/Captura%20de%20tela%202023-11-28%20182943.png)
+Modo Claro:
+
+![Claro](https://github.com/nandaconte/portifolio/blob/1d948bf39616282c65a45d59d99ab21f033ac374/bright.png)
+
+Modo Escuro:
+
 Ferramentas utilizadas:
 
 HTML
